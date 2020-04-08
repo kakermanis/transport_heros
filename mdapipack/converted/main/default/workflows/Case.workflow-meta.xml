@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Status_Update</fullName>
+        <description>Case Status Update</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Guest_Customer_Community_New_Case</fullName>
+        <description>Guest Customer Community New Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_Queue_Customer</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Customer_Cases</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Set Queue Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Queue_Employee</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Employee_Cases</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Set Queue Employee</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Driver_Case_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>NewGuestCustomerCase</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>contains</operation>
+            <value>@</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Route Case to Customer Queue</fullName>
+        <actions>
+            <name>Set_Queue_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Web,Facebook,Twitter,Instagram,YouTube</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Customer</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Route Case to Driver Case Queue</fullName>
+        <actions>
+            <name>Update_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Driver Case</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Route Case to Employee Queue</fullName>
+        <actions>
+            <name>Set_Queue_Employee</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Web,Facebook,Twitter,Instagram,YouTube</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Employee</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

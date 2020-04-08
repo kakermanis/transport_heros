@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title={CardTitle} icon-name={CardIcon}>
+    <div class="slds-m-around_medium">
+      <div class="slds-text-align_center slds-text-heading_large">{daysLeft} days remaining</div>
+    </div>
+
+    <div if:true={ShowProgressBar} class="slds-m-around_medium slds-p-top_small">
+        <lightning-progress-bar value={percentComplete} size="large"></lightning-progress-bar>
+    </div>
+  </lightning-card>
+</template>

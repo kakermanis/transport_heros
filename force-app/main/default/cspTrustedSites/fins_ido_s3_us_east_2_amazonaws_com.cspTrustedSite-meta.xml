@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CspTrustedSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <context>Communities</context>
+    <description>fins_ido_s3_us_east_2_amazonaws_com Trusted Site Added Via Community Builder</description>
+    <endpointUrl>https://fins-ido.s3.us-east-2.amazonaws.com</endpointUrl>
+    <isActive>true</isActive>
+</CspTrustedSite>

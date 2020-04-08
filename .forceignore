@@ -1,0 +1,45 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+
+force-app/main/default/reports/
+force-app/main/default/restrictionRules/
+force-app/main/default/settings/
+force-app/main/default/translations/
+force-app/main/default/milestoneTypes/
+force-app/main/default/entitlementProcesses/
+force-app/main/default/installedPackages/
+ force-app/main/default/roles/
+ force-app/main/default/reportTypes/
+ force-app/main/default/dashboards/
+ force-app/main/default/layouts/
+ force-app/main/default/documents/
+ force-app/main/default/email/
+ force-app/main/default/quickActions/
+ force-app/main/default/flowDefinitions/
+force-app/main/default/flows/
+force-app/main/default/profiles/
+force-app/main/default/permissionsets/
+force-app/main/default/duplicateRules/
+force-app/main/default/presenceUserConfigs/
+force-app/main/default/channelLayouts/
+force-app/main/default/contentassets/
+force-app/main/default/sites/
+force-app/main/default/sharingRules/
+force-app/main/default/networkBranding/
+force-app/main/default/navigationMenus/
+force-app/main/default/objects/Knowledge__kav/
+force-app/main/default/objectTranslations/
+force-app/main/default/profileSessionSettings/
+force-app/main/default/triggers/
+ force-app/main/default/networks/

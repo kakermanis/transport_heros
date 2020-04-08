@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Employee Category 1</label>
+            <name>Employee_Category_1</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Employee Category 2</label>
+            <name>Employee_Category_2</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>For Use with Employee Community/Internal Use cases</description>
+    <label>Employee</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;Try out making changes by adding a video to this community!&lt;/p&gt;&lt;p&gt;Follow these steps to do it:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Double click this component you are reading&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Highlight the YouTube URL below and copy it to your clipboard (Ctrl + C or ⌘ + C)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Drag and drop a &#39;Rich Content Editor&#39; component onto this page below this text - you can find this component by clicking the Lightning bolt in the top left and searching for &#39;Rich&#39;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Double click the new &#39;Rich Content Editor&#39; component that you just dragged on&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Delete all the text in there (the &#39;Replace this text...&#39;)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Select the video icon that is above the box on the far right (last icon)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Paste in the URL you copied earlier and click &#39;OK&#39;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Delete this component you are reading&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Remember to publish your changes!!&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;https://www.youtube.com/embed/rVcGyMXw2oE&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;color: rgb(68, 68, 68); font-size: 24px;&quot;&gt;- Explore Our Vide Variety of Products Below -&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>maxWidth</name>
+                <value>25</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>overlayColor</name>
+                <value>rgba(0,0,0,0.4)</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>overlayHoverColor</name>
+                <value>rgba(255, 255, 255, 0)</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>radius</name>
+                <value>0</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showTitle</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>textAlignment</name>
+                <value>center</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>textBgColor</name>
+                <value>rgba(107, 203, 238, 0.72)</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>textBgHoverColor</name>
+                <value>rgba(107, 203, 238, 0.71)</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>textColor</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>textHoverColor</name>
+                <value>rgb(255, 255, 255)</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>textPosition</name>
+                <value>center center</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Featured Topics</value>
+            </componentInstanceProperties>
+            <componentName>forceTopic:featuredTopics</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;color: rgb(0, 0, 0); font-size: 24px;&quot;&gt;- Recommended For You -&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>config</name>
+                <value>{&quot;dataProviderDefinition&quot;:{&quot;componentName&quot;:&quot;forceCommunity:managedContentCollectionDataProvider&quot;,&quot;attributes&quot;:{&quot;dataProviderType&quot;:&quot;NamedCollection&quot;,&quot;dataProviderInfo&quot;:{&quot;apiName&quot;:&quot;Men_s_Product&quot;}}},&quot;schemaVersion&quot;:&quot;V1.0&quot;,&quot;collectionLayoutDefinition&quot;:{&quot;componentName&quot;:&quot;forceCommunity:dynamicCollectionGrid&quot;,&quot;attributes&quot;:{&quot;columns&quot;:3,&quot;rows&quot;:2,&quot;spacing&quot;:&quot;medium&quot;,&quot;showCollectionTitle&quot;:true,&quot;collectionTitle&quot;:&quot;&quot;,&quot;showViewMoreButton&quot;:true,&quot;viewMoreButtonLabel&quot;:&quot;View More Items&quot;,&quot;viewMoreButtonPlacement&quot;:&quot;center&quot;,&quot;viewMoreButtonRadius&quot;:4,&quot;viewMoreButtonBackgroundColor&quot;:&quot;&quot;,&quot;viewMoreButtonBackgroundColorHover&quot;:&quot;&quot;,&quot;viewMoreButtonTextColor&quot;:&quot;&quot;,&quot;viewMoreButtonTextColorHover&quot;:&quot;&quot;,&quot;viewMoreButtonBorderColor&quot;:&quot;&quot;,&quot;viewMoreButtonBorderColorHover&quot;:&quot;&quot;,&quot;collectionTitleHeadingTag&quot;:&quot;h2&quot;}},&quot;itemLayoutDefinition&quot;:{&quot;componentName&quot;:&quot;forceCommunity:flexTileLayoutWithImage&quot;,&quot;attributes&quot;:{&quot;showImage&quot;:true,&quot;showExcerpt&quot;:true,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundPosition&quot;:&quot;center center&quot;,&quot;imageHeight&quot;:&quot;452&quot;,&quot;imageAlignment&quot;:&quot;top&quot;,&quot;textAlignment&quot;:&quot;center&quot;,&quot;contentBackgroundColor&quot;:&quot;rgb(246, 246, 246)&quot;,&quot;borderColor&quot;:&quot;&quot;,&quot;borderRadius&quot;:&quot;5&quot;,&quot;titleTextColor&quot;:&quot;rgb(79, 79, 79)&quot;,&quot;titleFontSize&quot;:&quot;medium&quot;,&quot;subTitleTextColor&quot;:&quot;&quot;,&quot;subTitleFontSize&quot;:&quot;small&quot;,&quot;titleHeadingTag&quot;:&quot;h2&quot;,&quot;title&quot;:&quot;@Name&quot;,&quot;subTitle&quot;:&quot;@Description&quot;,&quot;imageUrl&quot;:&quot;@Image_URL__c&quot;,&quot;imageAltText&quot;:&quot;@Name&quot;}}}</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:dynamicCollection</componentName>
+        </componentInstances>
+        <name>header</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+                <value>A page where NTO customers can find out all the latest information about NTO, solutions to their problems, create a support case, or collaborate with other customers</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>NTO Community</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>featured</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>sidebar</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>footer</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Home</masterLabel>
+    <template>
+        <name>siteforce:sldsOneColLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

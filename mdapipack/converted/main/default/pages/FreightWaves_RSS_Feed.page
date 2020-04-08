@@ -1,0 +1,4 @@
+<apex:page >
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Ffeeds.feedburner.com%2FFreightwaves&detail=&limit=5&showtitle=false&type=js"></script>
+    
+</apex:page>
