@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Stop_Date__c</fullName>
+    <description>What is the start date of the driver&#39;s work stoppage</description>
+    <externalId>false</externalId>
+    <label>Work Stop Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>
