@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CspTrustedSite xmlns="http://soap.sforce.com/2006/04/metadata">
-    <context>Communities</context>
-    <description>d_la4_c2_ia2_salesforceliveagent_com Trusted Site Added Via Community Builder</description>
-    <endpointUrl>https://d.la4-c2-ia2.salesforceliveagent.com</endpointUrl>
-    <isActive>true</isActive>
-</CspTrustedSite>

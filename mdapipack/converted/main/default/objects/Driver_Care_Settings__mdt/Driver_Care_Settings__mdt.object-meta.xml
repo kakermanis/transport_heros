@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Holds all configurable settings for the Salesforce Care for Industries - Transport and Logistics package</description>
-    <label>Driver Care Setting</label>
-    <pluralLabel>Driver Care Settings</pluralLabel>
-    <visibility>Public</visibility>
-</CustomObject>

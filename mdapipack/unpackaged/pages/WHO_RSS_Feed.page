@@ -1,5 +1,0 @@
-<apex:page >
-    
-   <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.who.int%2Frss-feeds%2Fnews-english.xml&limit=5&showtitle=false&type=js">
-    </script>
-</apex:page>

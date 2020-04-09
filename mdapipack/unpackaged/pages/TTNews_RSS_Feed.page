@@ -1,4 +1,0 @@
-<apex:page >
-    <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.ttnews.com%2Frss.xml&detail=&limit=5&showtitle=false&type=js"></script>
-    
-</apex:page>
