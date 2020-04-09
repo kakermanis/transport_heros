@@ -2,7 +2,15 @@
   "packageDirectories": [
     {
       "path": "force-app",
+      "default": false
+    },
+    {
+      "path": "datamodel",
       "default": true
+    },
+    {
+      "path": "datamodel",
+      "default": false
     }
   ],
   "namespace": "",

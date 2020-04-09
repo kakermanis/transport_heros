@@ -11,6 +11,8 @@ package.xml
 # LWC Jest
 **/__tests__/**
 
+# MAIN PROJECT STREAM
+force-app/
 
 force-app/main/default/reports/
 force-app/main/default/restrictionRules/
@@ -19,27 +21,50 @@ force-app/main/default/translations/
 force-app/main/default/milestoneTypes/
 force-app/main/default/entitlementProcesses/
 force-app/main/default/installedPackages/
- force-app/main/default/roles/
- force-app/main/default/reportTypes/
- force-app/main/default/dashboards/
- force-app/main/default/layouts/
- force-app/main/default/documents/
- force-app/main/default/email/
- force-app/main/default/quickActions/
- force-app/main/default/flowDefinitions/
+force-app/main/default/roles/
+force-app/main/default/reportTypes/
+force-app/main/default/dashboards/
+
+force-app/main/default/documents/
+force-app/main/default/email/
+force-app/main/default/quickActions/
+force-app/main/default/flowDefinitions/
 force-app/main/default/flows/
-force-app/main/default/profiles/
+
 force-app/main/default/permissionsets/
 force-app/main/default/duplicateRules/
 force-app/main/default/presenceUserConfigs/
 force-app/main/default/channelLayouts/
 force-app/main/default/contentassets/
-force-app/main/default/sites/
+
 force-app/main/default/sharingRules/
 force-app/main/default/networkBranding/
 force-app/main/default/navigationMenus/
-force-app/main/default/objects/Knowledge__kav/
+
 force-app/main/default/objectTranslations/
 force-app/main/default/profileSessionSettings/
 force-app/main/default/triggers/
- force-app/main/default/networks/
+force-app/main/default/emailservices/
+force-app/main/default/liveChatButtons/
+force-app/main/default/EmbeddedServiceLiveAgent/
+
+
+force-app/main/default/layouts/
+force-app/main/default/profiles/
+
+#force-app/main/default/sites/
+#force-app/main/default/objects/Knowledge__kav/
+
+#force-app/main/default/networks/
+
+
+# DATA MODEL
+#datamodel
+#datamodel/main/default/layouts/
+#datamodel/main/default/objects/Case/businessProcesses/
+#datamodel/main/default/objects/Case/recordTypes/
+#datamodel/main/default/objects/Contact/recordTypes/
+#datamodel/main/default/objects/PersonAccount/recordTypes/
+
+datamodel/main/default/objects/Case/recordTypes/Customer_Case.recordType-meta.xml
+datamodel/main/default/objects/Case/recordTypes/Employee_Case.recordType-meta.xml
