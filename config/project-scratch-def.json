@@ -12,7 +12,8 @@
     "SiteDotCom",
     "Sites",
     "WavePlatform",
-    "InsightsPlatform"
+    "InsightsPlatform",
+    "Entitlements"
   ],
   "settings": {
       "botSettings": {
@@ -45,6 +46,16 @@
       },
       "mobileSettings": {
           "enableS1EncryptedStoragePref2": false
+      },
+      "entitlementSettings": {
+          "enableEntitlements": false
+      },      
+      "languageSettings": {
+          "enableTranslationWorkbench": false
+      },
+      "nameSettings": {
+          "enableMiddleName": false,
+          "enableNameSuffix": false
       },
       "securitySettings": {
           "passwordPolicies": {

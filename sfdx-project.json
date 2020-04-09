@@ -10,7 +10,7 @@
     },
     {
       "path": "src/community",
-      "default": false
+      "default": true
     },
     {
       "path": "src/console",
@@ -18,14 +18,45 @@
     },
     {
       "path": "src/datamodel",
-      "default": true
+      "default": false
+    },
+    {
+      "path": "src/driverMgmtApp",
+      "default": false
+    },
+    {
+      "path": "src/flows",
+      "default": false
     },
     {
       "path": "src/force-app",
+      "default": false
+    },
+    {
+      "path": "src/knowledgeMgmtApp",
       "default": false
     }
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "48.0"
+  "sourceApiVersion": "48.0",
+  "packageAliases": {
+    "ServiceAgentScript":"04t0b000001jjHZAAY",
+    "DreamForceTrials":"04t0b000001DkOeAAK",
+    "quickChoiceFSC":"04t1K0000033L8EQAU",
+    "Build-a-BotCampfireExamplePack":"04t1N000000GeczQAC",
+    "OmniDashboard":"04t1U000007oUF9QAM",
+    "KnowledgeBaseDashboardsnReports":"04t30000000bqOuAAI",
+    "SalesforceConnectedApps":"04t30000001DUvrAAG",
+    "SalesforceandChatterApps":"04t30000001AGSuAAO",
+    "SalesforceMaps":"04t4P000000A6hc",
+    "Salesforce.comCRMDashboards":"04t50000000EcdrAAC",
+    "ChatterGroupTiles":"04t58000000Qta5AAC",
+    "SCSConnectedApp":"04t6A0000005kkMQAQ",
+    "FlowDatagridPack":"04t6g000008buOiAAI",
+    "DEDashboard":"04t6g000008BuZXAA0",
+    "LightningBannerCarouselnSlide":"04tB0000000Y9x8IAC",
+    "SocialCustomerService":"04ti0000000QzQyAAK",
+    "SalesforceCommunitiesManagement":"04t1J000000OUuGQAW"
+  }
 }

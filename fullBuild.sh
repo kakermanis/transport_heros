@@ -35,6 +35,29 @@ sfdx shane:github:package:install -g mshanemc -r community-boilerplate
 # EDIT - install any AppExchange / Demo components you need
 #./scripts/bash/installAppEx.sh "Demo Component - Lightning File Gallery "$SFDXALIAS
 
+
+echo
+echo 'Installing a pile of AppEx Apps'
+echo
+./scripts/bash/installAppEx.sh "ServiceAgentScript" $SFDXALIAS
+./scripts/bash/installAppEx.sh "DreamForceTrials" $SFDXALIAS
+./scripts/bash/installAppEx.sh "quickChoiceFSC" $SFDXALIAS
+./scripts/bash/installAppEx.sh "Build-a-BotCampfireExamplePack" $SFDXALIAS
+./scripts/bash/installAppEx.sh "OmniDashboard" $SFDXALIAS
+./scripts/bash/installAppEx.sh "KnowledgeBaseDashboardsnReports" $SFDXALIAS
+./scripts/bash/installAppEx.sh "SalesforceConnectedApps" $SFDXALIAS
+./scripts/bash/installAppEx.sh "SalesforceandChatterApps" $SFDXALIAS
+./scripts/bash/installAppEx.sh "SalesforceMaps" $SFDXALIAS
+./scripts/bash/installAppEx.sh "Salesforce.comCRMDashboards" $SFDXALIAS
+./scripts/bash/installAppEx.sh "ChatterGroupTiles" $SFDXALIAS
+./scripts/bash/installAppEx.sh "SCSConnectedApp" $SFDXALIAS
+./scripts/bash/installAppEx.sh "FlowDatagridPack" $SFDXALIAS
+./scripts/bash/installAppEx.sh "DEDashboard" $SFDXALIAS
+./scripts/bash/installAppEx.sh "LightningBannerCarouselnSlide" $SFDXALIAS
+./scripts/bash/installAppEx.sh "SocialCustomerService" $SFDXALIAS
+./scripts/bash/installAppEx.sh "SalesforceCommunitiesManagement" $SFDXALIAS
+
+
 #./scripts/bash/installDependencies.sh "$SFDXALIAS"
 
 #./scripts/bash/installFromGithub.sh kakermanis sdo-dependencies
