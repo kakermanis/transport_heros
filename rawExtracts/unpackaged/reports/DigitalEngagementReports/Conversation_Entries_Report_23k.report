@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ConversationEntry$ActorName</field>
+    </columns>
+    <columns>
+        <field>ConversationEntry$Id</field>
+    </columns>
+    <columns>
+        <field>ConversationEntry$MessageIdentifier</field>
+    </columns>
+    <columns>
+        <field>ConversationEntry$Message</field>
+    </columns>
+    <columns>
+        <field>ConversationEntry$EntryType</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ConversationEntry$ActorType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Conversation Entries Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Conversation_Entries_Report_Type__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ConversationEntry$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

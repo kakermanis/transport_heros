@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Holds all configurable settings for the Salesforce Care for Industries - Transport and Logistics package</description>
+    <fields>
+        <fullName>Default_Return_to_work_days__c</fullName>
+        <defaultValue>14</defaultValue>
+        <description>The number of days to add to the Work Stoppage Date to determine the Estimated Return to work date</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Default Return to work days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMS_Validation_RegEx__c</fullName>
+        <description>For Login discovery, specifies the Regular Expression used to validate the input SMS number</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SMS_Validation_RegEx</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Driver Care Setting</label>
+    <pluralLabel>Driver Care Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

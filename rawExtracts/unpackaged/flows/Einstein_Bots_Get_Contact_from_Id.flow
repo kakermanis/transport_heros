@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Sets the Account Id Variable to the Account Id value on the returned Contact object</description>
+        <name>Set_Account_Id</name>
+        <label>Set Account Id</label>
+        <locationX>368</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>varAccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvarContact.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Returns a Contact object that relates to the passed in Id</description>
+    <interviewLabel>Einstein Bots - Get Contact from Id {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Einstein Bots - Get Contact from Id</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Retrieves the contact that relates to the passed in ID</description>
+        <name>Get_Contact</name>
+        <label>Get Contact</label>
+        <locationX>204</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Account_Id</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varContactId</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>rvarContact</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FirstName</queriedFields>
+        <queriedFields>LastName</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>Phone</queriedFields>
+        <queriedFields>MailingAddress</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+    </recordLookups>
+    <startElementReference>Get_Contact</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>The Contact object that will be returned</description>
+        <name>rvarContact</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <description>The Account Id of the returned Contact object</description>
+        <name>varAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The ID of the Contact object that will be returned</description>
+        <name>varContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

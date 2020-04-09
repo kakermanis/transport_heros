@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>All Authenticated Users</audienceName>
+    <container>Salesforce Care Customer Help Center</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Profile.UserType</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Guest</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <targets>
+        <target>
+            <groupName>06832094-d6eb-46df-b22e-f231e0251ee8$#$61ae6fae-9cba-4bd6-b57d-814c17e9a94d</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Topic_Detail_Follow_Button_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

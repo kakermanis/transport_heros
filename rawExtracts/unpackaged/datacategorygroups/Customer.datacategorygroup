@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Temporary Closure</label>
+            <name>Temporary_Closure</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Service and Support</label>
+            <name>Service_Support</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Announcements</label>
+            <name>Announcements</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FAQ</label>
+            <name>FAQ</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>for use with Customer Community</description>
+    <label>Customer</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>
