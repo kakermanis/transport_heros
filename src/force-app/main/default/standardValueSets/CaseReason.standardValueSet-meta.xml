@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Issue at Pick-up/Delivery</fullName>
+        <default>false</default>
+        <label>Issue at Pick-up/Delivery</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Need Help</fullName>
+        <default>false</default>
+        <label>Need Help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Need Equipment</fullName>
+        <default>false</default>
+        <label>Need Equipment</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Unable to Work Today</fullName>
+        <default>false</default>
+        <label>Unable to Work Today</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

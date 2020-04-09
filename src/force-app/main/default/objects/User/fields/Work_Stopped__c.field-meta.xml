@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Stopped__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Part of return to work functionality. If checked indicates that the user/driver/contact is not able to work. Field mainly used for component visibility for the Return To Work lightning web component within the community</description>
+    <externalId>false</externalId>
+    <label>Work Stopped</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

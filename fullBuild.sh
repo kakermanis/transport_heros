@@ -25,6 +25,11 @@ STARTTIME=$(date +%s)
 
 ./scripts/bash/createScratchOrg.sh $SFDXALIAS $USRNAME $DEFAULTPWD
 
+echo
+echo 'Installing Community Boiler Plate...'
+echo
+sfdx shane:github:package:install -g mshanemc -r community-boilerplate
+
 #./scripts/bash/updateUserName.sh $SFDXALIAS $USRNAME
 
 # EDIT - install any AppExchange / Demo components you need

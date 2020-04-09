@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Location Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Truck Stops</fullName>
+                <default>false</default>
+                <label>Truck Stops</label>
+            </value>
+            <value>
+                <fullName>Weigh Stations</fullName>
+                <default>false</default>
+                <label>Weigh Stations</label>
+            </value>
+            <value>
+                <fullName>Truck Parking</fullName>
+                <default>false</default>
+                <label>Truck Parking</label>
+            </value>
+            <value>
+                <fullName>Fuel Stops</fullName>
+                <default>false</default>
+                <label>Fuel Stops</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Rest Areas</fullName>
+                <default>false</default>
+                <label>Rest Areas</label>
+            </value>
+            <value>
+                <fullName>Hospitals</fullName>
+                <default>false</default>
+                <label>Hospitals</label>
+            </value>
+            <value>
+                <fullName>Hotels</fullName>
+                <default>false</default>
+                <label>Hotels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

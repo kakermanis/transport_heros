@@ -1,15 +1,27 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
+      "path": "src/bots",
       "default": false
     },
     {
-      "path": "datamodel",
+      "path": "src/code",
+      "default": false
+    },
+    {
+      "path": "src/community",
+      "default": false
+    },
+    {
+      "path": "src/console",
+      "default": false
+    },
+    {
+      "path": "src/datamodel",
       "default": true
     },
     {
-      "path": "datamodel",
+      "path": "src/force-app",
       "default": false
     }
   ],
